@@ -251,7 +251,7 @@ figcaption {
 .gallery__image-caption h3 {
     font-family: 'Merriweather', serif;
     font-size: 50px;
-    color: blue;
+    color: orangered;
 
     text-align:center;
 }
@@ -282,97 +282,7 @@ figcaption {
     transition: opacity 2s ease-out;
 }
 
-/*Best Doctor Section begins*/
-.doctorsel {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
 
-
-    
-    padding-right: 12%;
-    padding-bottom: 8%;
-    padding-left: 9%;   
-}
-
-
-
-
-.best h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 40px;
-}
-
-.best p {
-    font-family: 'Muli', sans-serif;
-    font-size: 30px;
-
-}
-
-.best {
-    color: black;
-    text-align: center;
-    height: 100%;
-    padding: 50px;
-}
-
-img {
-    width: 100%;
-
-}
-
-.docimg {
-    width: 200px;
-    overflow: hidden;
-    
-}
-
-.docimg.doc4 {
-    height: 400px;
-}
-
-.doctext,
-.docimg {
-    position: absolute; 
-    width: 296px;
-    text-align: center;
-    font-size: 25px;
-    color:#003B6F;
-    border-radius: 5px;
-    backface-visibility: hidden;
-}
-
-.docwho .doctext span { 
-    color: #E4B200;
-    font-size: 50px;
- }
-
-.flipdoc {
-    perspective: 500px;
-    height: 500px;
-    width: 200px;
-    margin-bottom: 5px;
-}
-
-.flipdoc:hover .docwho {
-    transform: rotateY(180deg);
-    transition: transform 0.5s ease;
-    
-}
-
-.docwho {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    
-
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-.doctext {
-    transform:rotateY(180deg);
-}
 
 
 /*Question style begins*/
