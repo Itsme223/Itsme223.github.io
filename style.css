@@ -13,6 +13,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
             
 .body {
         width: 80%;
+
     }
 
 video {
@@ -89,11 +90,11 @@ input[type="checkbox"] {
 
 .Doctor p {
     font-family: 'Muli', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
 .Doctor span {
     font-family: 'Merriweather', serif;
-    font-size: 35px;
+    font-size: 30px;
     color: #E4B200;
 }
 /*Where to Start styles begin*/
@@ -111,11 +112,11 @@ input[type="checkbox"] {
 }
 .Start p {
     font-family: 'Muli', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
 }
 .Start span {
     font-family: 'Merriweather',serif;
-    font-size: 35px;
+    font-size: 28px;
     color:red;
 }
 .Start .Newbies {
@@ -127,7 +128,9 @@ input[type="checkbox"] {
     list-style: none;
     line-height: 2;
 }
-
+.Newbies h2 {
+    color: blue;
+}
 .Newbies h1 {
     font-family: 'Muli', sans-serif;
     font-size: 30px;
@@ -153,6 +156,9 @@ input[type="checkbox"] {
     color:#003B6f;
 
 }
+.Somewhat h2 {
+    color: blue;
+}
 .Somewhat li {
     font-family: 'Merriweather', serif;
 }
@@ -164,6 +170,7 @@ input[type="checkbox"] {
     padding: 19px;  
     list-style: none;
     line-height: 2;
+    margin: 0 auto;
 }
 .binge h1 {
     font-family: 'Muli', sans-serif; 
@@ -171,7 +178,10 @@ input[type="checkbox"] {
     color:#003B6f;
     font-size: 30px;
 }
+.binge h2 {
+    color: red;
 
+}
 .binge li {
     font-family: 'Merriweather', serif;
     font-size: 20px;
@@ -188,12 +198,13 @@ input[type="checkbox"] {
 
 .doctors h1 {
      font-family: 'Merriweather', serif;
-     font-size: 40px;
+     font-size: 30px;
+
 
 }
 .doctors p {
     font-family: 'Muli', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
 }
 /*Gallery Styles begin*/
 
@@ -424,45 +435,9 @@ img {
 .comments p {
     font-size:20px;
 } 
-/*FOOTER STYLE BEGINS*/
 
-.footer {
-    background:#E4B200 ;
 
-    display: flex;
-    justify-content: center;
-    
-    
-    
-    height: 100%;
-    width: 100%;
-    line-height: 2;
-   
-}
 
-.foot li {
-    margin-right: 100px;
-    font-size: 30px;
-    list-style: none;
-}
-.foot li a {
-    text-decoration: none;
-}
-.foot1 li {
-    margin-left: 100px;
-    list-style: none;
-    font-size: 30px;
-}
-
-.foot1 li a {
-    text-decoration: none;
-}
-.footer p {
-        margin-left: 11%;
-        margin-top: 9%;
-   
-
-}
 
    
 @media screen and (max-width: 800px){
@@ -493,12 +468,7 @@ img {
     .doctext:hover {
         text-align: center;
     }
-    footer {
-        flex-direction: column;
-        margin: 0 auto;
-        width: 70%;
-        
-    }
+    
 }
 
 
@@ -527,6 +497,9 @@ img {
 @media only screen and (max-width: 360px){
     nav {
         display: none;
+    }
+    body {
+        font-size: 90%;
     }
 
     .doctorsel {
