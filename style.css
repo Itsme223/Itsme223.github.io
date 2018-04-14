@@ -1,0 +1,552 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    transition: left 1s;
+    left: 0;
+    }
+            
+.body {
+        width: 80%;
+    }
+
+video {
+                
+    object-fit: fill;
+    width: 100%;
+}
+
+nav {
+
+    background: black;
+    display: flex;
+    position: fixed;
+    width: 25%;
+    right: -30%;
+    top:0;
+    bottom:0;
+    margin:0;
+    padding: 0;
+    
+    transition: right 1s;
+    z-index: 10;
+}    
+
+nav a {
+        color: white;
+        font-size: 40px;
+        padding: 10px;
+        display: block;
+        text-decoration: none;      
+}
+
+
+.menu li a {
+    list-style: none;
+}
+
+input[type="checkbox"]:checked + nav {
+    right: 0;
+}
+
+input[type="checkbox"]:checked ~ .wrapper {
+    left: -30%;
+}
+
+label{
+    position: fixed;
+    top:10px;
+    left:10px;
+    color:white;
+    z-index: 10;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+
+
+/*Main Section Styles begin*/
+.Doctor {
+    background: #003B6F;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+}
+
+.Doctor h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+
+}
+
+.Doctor p {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+}
+.Doctor span {
+    font-family: 'Merriweather', serif;
+    font-size: 35px;
+    color: #E4B200;
+}
+/*Where to Start styles begin*/
+.Start {
+    color: black;
+    text-align: center;
+    height: 100%;
+    padding: 100px;
+}
+.Start h1{
+
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+
+}
+.Start p {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+}
+.Start span {
+    font-family: 'Merriweather',serif;
+    font-size: 35px;
+    color:red;
+}
+.Start .Newbies {
+    float: left;
+    text-decoration:none;
+    background:#E4B200 ;
+    border: 2px solid black;
+    padding: 19px;
+    list-style: none;
+    line-height: 2;
+}
+
+.Newbies h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+    color:#003B6f;
+}
+
+.Newbies li {
+    font-family: 'Merriweather', serif;
+}
+
+.Start .Somewhat {
+    float: right;
+    text-decoration:none;
+    background:#E4B200 ;
+    border: 2px solid black;
+    padding: 19px;  
+    list-style: none;
+    line-height: 2;
+}
+.Somewhat h1 {
+    font-family: 'Muli', sans-serif; 
+    font-size:30px;
+    color:#003B6f;
+
+}
+.Somewhat li {
+    font-family: 'Merriweather', serif;
+}
+.binge {
+    
+    text-decoration:none;
+    background:#E4B200 ;
+    border: 2px solid black;
+    padding: 19px;  
+    list-style: none;
+    line-height: 2;
+}
+.binge h1 {
+    font-family: 'Muli', sans-serif; 
+    font-size:30px;
+    color:#003B6f;
+    font-size: 30px;
+}
+
+.binge li {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+/*Regeneration Styles begin*/
+.doctors {
+    background: #003B6F;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+}
+
+.doctors h1 {
+     font-family: 'Merriweather', serif;
+     font-size: 40px;
+
+}
+.doctors p {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+}
+/*Gallery Styles begin*/
+
+
+.gallery {
+  flex-flow: row wrap;
+  background:#003B6F;
+
+}
+
+.doctorim {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gallery__image {
+    display: block;
+
+}
+
+.gallery__item {
+    position:relative;
+    width: calc(33.3% - 2rem);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+    filter: grayscale(100%);
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    
+
+    transition: opacity 2s ease-in;
+}
+
+.gallery__image-caption h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: blue;
+
+    text-align:center;
+}
+
+.gallery__image-caption p {
+    font-family:'Muli', sans-serif;
+    font-size: 40px;
+    color: #ff253a;
+    
+    text-align: center;
+}
+
+.gallery__image-caption h4 {
+    font-family:'Muli', sans-serif;
+    font-size: 40px;
+    color: blue;
+
+    text-align: center;
+}
+
+.gallery__item:hover {
+    filter:grayscale(0%);
+}
+
+.gallery__item:hover figcaption{
+    opacity: 1;
+    
+    transition: opacity 2s ease-out;
+}
+
+/*Best Doctor Section begins*/
+.doctorsel {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+    
+    padding-right: 12%;
+    padding-bottom: 8%;
+    padding-left: 9%;   
+}
+
+
+
+
+.best h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+
+.best p {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+
+}
+
+.best {
+    color: black;
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+}
+
+img {
+    width: 100%;
+
+}
+
+.docimg {
+    width: 200px;
+    overflow: hidden;
+    
+}
+
+.docimg.doc4 {
+    height: 400px;
+}
+
+.doctext,
+.docimg {
+    position: absolute; 
+    width: 296px;
+    text-align: center;
+    font-size: 25px;
+    color:#003B6F;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.docwho .doctext span { 
+    color: #E4B200;
+    font-size: 50px;
+ }
+
+.flipdoc {
+    perspective: 500px;
+    height: 500px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.flipdoc:hover .docwho {
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+    
+}
+
+.docwho {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.doctext {
+    transform:rotateY(180deg);
+}
+
+
+/*Question style begins*/
+.questions {
+    background: #003B6F;
+    color: white;
+    margin-top: 70px;
+    height: 100%;
+    padding: 50px;
+    object-fit: fill;
+
+}
+
+.questions li{
+    list-style: none;
+}
+
+.questions h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.questions h3 {
+    font-size:25px;
+    color: white;
+}
+.questions p {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    color: yellow;
+
+}
+
+/*Comment styles begins*/
+.comments {
+    color: black;
+    text-align: center;
+    height: 100%;
+    padding: 50px;
+    object-position: fill;
+}
+.comments li {
+    list-style: none;
+}
+
+.comments h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 40px;
+}
+
+.comments h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+    color: blue;
+}
+.comments h5 {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+
+}
+.comments p {
+    font-size:20px;
+} 
+/*FOOTER STYLE BEGINS*/
+
+.footer {
+    background:#E4B200 ;
+
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    height: 100%;
+    width: 100%;
+    line-height: 2;
+   
+}
+
+.foot li {
+    margin-right: 100px;
+    font-size: 30px;
+    list-style: none;
+}
+.foot li a {
+    text-decoration: none;
+}
+.foot1 li {
+    margin-left: 100px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.foot1 li a {
+    text-decoration: none;
+}
+.footer p {
+        margin-left: 11%;
+        margin-top: 9%;
+   
+
+}
+
+   
+@media screen and (max-width: 800px){
+    nav {
+        width: 35%;
+        right:-35%;
+    }
+
+    .gallery__item{
+        
+        width: 100%;
+    }
+    
+    .doctorsel {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .doctext p {
+        display: none;
+    }
+    .doctext {
+        padding-left: 229px;
+        padding-top: 122px;
+    }
+
+    .doctext:hover {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 70%;
+        
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .gallery__item {
+    flex-basis: calc(100% / 291px);
+    }
+    .doctorsel {
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .gallery__item{
+    flex-basis:calc((100% / 1875px) - 32px);
+  }
+    .doctorsel {
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    nav {
+        display: none;
+    }
+
+    .doctorsel {
+        padding-left: 100px;
+        
+
+    }
+
+    .docimg {
+
+        padding-right: 100px;
+    }
+
+    .doctext {
+        height:100%;
+        width:90%;
+        
+    }
+    .doctext p {
+        display: none;
+
+    }
+}
