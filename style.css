@@ -13,6 +13,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
             
 .body {
         width: 80%;
+        margin: 0 auto;
 
     }
 
@@ -235,7 +236,9 @@ input[type="checkbox"] {
     box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
     filter: grayscale(100%);
 }
-
+.gallery__item img {
+    width: 100%;
+}
 figcaption {
     position: absolute;
     left: 0;
@@ -251,7 +254,7 @@ figcaption {
 .gallery__image-caption h3 {
     font-family: 'Merriweather', serif;
     font-size: 50px;
-    color: orangered;
+    color: orange;
 
     text-align:center;
 }
@@ -287,12 +290,13 @@ figcaption {
 
 /*Question style begins*/
 .questions {
-    background: #003B6F;
-    color: white;
+    background: white;
+    color: #003B6F;
     margin-top: 70px;
     height: 100%;
     padding: 50px;
     object-fit: fill;
+    margin:0;
 
 }
 
@@ -306,17 +310,18 @@ figcaption {
 }
 .questions h3 {
     font-size:25px;
-    color: white;
+    color: black;
 }
 .questions p {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
-    color: yellow;
+    color: #003B6F ;
 
 }
 
 /*Comment styles begins*/
 .comments {
+    background: #003B6F;
     color: black;
     text-align: center;
     height: 100%;
@@ -330,12 +335,13 @@ figcaption {
 .comments h1 {
     font-family: 'Merriweather', sans-serif;
     font-size: 40px;
+    color:black;
 }
 
 .comments h3 {
     font-family: 'Muli', sans-serif;
     font-size: 30px;
-    color: blue;
+    color: yellow;
 }
 .comments h5 {
     font-family: 'Muli', sans-serif;
