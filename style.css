@@ -85,13 +85,13 @@ input[type="checkbox"] {
 
 .Doctor h1 {
     font-family: 'Merriweather', serif;
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
 .Doctor p {
     font-family: 'Muli', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
 }
 .Doctor span {
     font-family: 'Merriweather', serif;
@@ -113,7 +113,7 @@ input[type="checkbox"] {
 }
 .Start p {
     font-family: 'Muli', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
 }
 .Start span {
     font-family: 'Merriweather',serif;
@@ -166,8 +166,8 @@ input[type="checkbox"] {
 .binge {
     
     text-decoration:none;
-    background:#E4B200 ;
-    border: 2px solid black;
+    /*background:#E4B200 ;
+    /*border: 2px solid black;*/
     padding: 19px;  
     list-style: none;
     line-height: 2;
@@ -284,8 +284,6 @@ figcaption {
     
     transition: opacity 2s ease-out;
 }
-
-
 
 
 /*Question style begins*/
