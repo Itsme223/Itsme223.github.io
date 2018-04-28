@@ -2,20 +2,15 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box;    box-sizing: border-box; }
+body {
+    background: #003B6F;
+}
 .wrapper {
-    width: 100%;
-    position: relative;
-    transition: left 1s;
-    left: 0;
-    }
-            
-.body {
-        width: 80%;
-        margin: 0 auto;
-
-    }
+    width: 80%;
+    margin: auto;
+    max-width: 1080px
+}
 
 video {
                 
@@ -75,111 +70,123 @@ input[type="checkbox"] {
 
 
 /*Main Section Styles begin*/
-.Doctor {
+.doctor {
     background: #003B6F;
     color: white;
     text-align: center;
     height: 100%;
-    padding: 50px;
+    
 }
 
-.Doctor h1 {
+.doctor h1 {
     font-family: 'Merriweather', serif;
     font-size: 35px;
 
 }
 
-.Doctor p {
+.doctor p {
     font-family: 'Muli', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 2;
 }
-.Doctor span {
+.doctor span {
     font-family: 'Merriweather', serif;
     font-size: 30px;
     color: #E4B200;
 }
 /*Where to Start styles begin*/
-.Start {
-    color: black;
+.start {
+    color: white;
     text-align: center;
     height: 100%;
-    padding: 100px;
+    /*padding: 100px;*/
 }
-.Start h1{
-
+.start h1{
+    color: red;
     font-family: 'Merriweather', serif;
     font-size: 40px;
 
 }
-.Start p {
+.start p {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
 }
-.Start span {
+.start span {
     font-family: 'Merriweather',serif;
     font-size: 28px;
     color:red;
 }
-.Start .Newbies {
+.start .new {
     float: left;
     text-decoration:none;
     background:#E4B200 ;
     border: 2px solid black;
     padding: 19px;
-    list-style: none;
     line-height: 2;
+
 }
-.Newbies h2 {
+
+.newbies h2 {
     color: blue;
 }
-.Newbies h1 {
+.new h1 {
     font-family: 'Muli', sans-serif;
     font-size: 30px;
     color:#003B6f;
 }
 
-.Newbies li {
+.newbies li {
+    list-style: none;
+    text-align: center;
     font-family: 'Merriweather', serif;
 }
 
-.Start .Somewhat {
+.start .familiar {
     float: right;
     text-decoration:none;
     background:#E4B200 ;
     border: 2px solid black;
-    padding: 19px;  
-    list-style: none;
+    padding: 19px; 
     line-height: 2;
 }
-.Somewhat h1 {
+.familiar h1 {
     font-family: 'Muli', sans-serif; 
     font-size:30px;
     color:#003B6f;
 
 }
-.Somewhat h2 {
+.familiiar .somewhat li {
+    list-style: none;
+}
+.somewhat h2 {
     color: blue;
 }
-.Somewhat li {
+.somewhat li {
     font-family: 'Merriweather', serif;
 }
+.order {
+    background:#E4B200 ;
+}
+.order h2 {
+    font-family: 'Muli', sans-serif; 
+    font-size:30px;
+    color:#003B6f;
+    font-size: 30px;
+
+}
+
+
 .binge {
     
-    text-decoration:none;
-    /*background:#E4B200 ;
-    /*border: 2px solid black;*/
+    text-decoration: none;
+    
     padding: 19px;  
     list-style: none;
     line-height: 2;
     margin: 0 auto;
 }
-.binge h1 {
-    font-family: 'Muli', sans-serif; 
-    font-size:30px;
-    color:#003B6f;
-    font-size: 30px;
-}
-.binge h2 {
+
+.binge h3 {
     color: red;
 
 }
@@ -187,6 +194,7 @@ input[type="checkbox"] {
     font-family: 'Merriweather', serif;
     font-size: 20px;
 }
+
 /*Regeneration Styles begin*/
 .doctors {
     background: #003B6F;
@@ -194,7 +202,8 @@ input[type="checkbox"] {
     text-align: center;
     height: 100%;
     width: 100%;
-    padding: 100px;
+    line-height: 2;
+    /*padding: 100px;*/
 }
 
 .doctors h1 {
@@ -207,8 +216,8 @@ input[type="checkbox"] {
     font-family: 'Muli', sans-serif;
     font-size: 23px;
 }
-/*Gallery Styles begin*/
 
+/*Gallery Styles begins*/
 
 .gallery {
   flex-flow: row wrap;
@@ -253,7 +262,7 @@ figcaption {
 
 .gallery__image-caption h3 {
     font-family: 'Merriweather', serif;
-    font-size: 50px;
+    font-size: 220%;
     color: orange;
 
     text-align:center;
@@ -261,7 +270,7 @@ figcaption {
 
 .gallery__image-caption p {
     font-family:'Muli', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #ff253a;
     
     text-align: center;
@@ -269,7 +278,7 @@ figcaption {
 
 .gallery__image-caption h4 {
     font-family:'Muli', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: blue;
 
     text-align: center;
@@ -288,42 +297,45 @@ figcaption {
 
 /*Question style begins*/
 .questions {
-    background: white;
-    color: #003B6F;
+    color: black;
     margin-top: 70px;
     height: 100%;
-    padding: 50px;
     object-fit: fill;
     margin:0;
 
-}
-
-.questions li{
-    list-style: none;
 }
 
 .questions h1 {
     text-align: center;
     font-size: 40px;
 }
+.questions h5 {
+    font-size: 25px;
+    text-align: center;
+}
+.questions li{
+    list-style: none;
+    text-align: center;
+}
+
 .questions h3 {
     font-size:25px;
-    color: black;
+    color: #E4B200;
 }
+
 .questions p {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
-    color: #003B6F ;
-
+    color: black;
 }
+
+
 
 /*Comment styles begins*/
 .comments {
-    background: #003B6F;
-    color: black;
+    color: #000;
     text-align: center;
     height: 100%;
-    padding: 50px;
     object-position: fill;
 }
 .comments li {
@@ -332,18 +344,18 @@ figcaption {
 
 .comments h1 {
     font-family: 'Merriweather', sans-serif;
-    font-size: 40px;
-    color:black;
+    font-size: 30px;
+    color: #000;
 }
 
 .comments h3 {
     font-family: 'Muli', sans-serif;
-    font-size: 30px;
-    color: yellow;
+    font-size: 25px;
+    color: #E4B200;
 }
 .comments h5 {
     font-family: 'Muli', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 .comments p {
@@ -356,8 +368,9 @@ figcaption {
    
 @media screen and (max-width: 800px){
     nav {
-        width: 35%;
-        right:-35%;
+        width: 68%;
+        right: -68%;
+
     }
 
     .gallery__item{
@@ -383,6 +396,7 @@ figcaption {
         text-align: center;
     }
     
+    
 }
 
 
@@ -397,6 +411,16 @@ figcaption {
     }
 
 }
+
+@media only screen and (max-width: 500px){
+
+    .container{
+        width: 100%;
+    }
+
+    
+
+}
 @media only screen and (max-width: 400px){
     .gallery__item{
     flex-basis:calc((100% / 1875px) - 32px);
@@ -406,14 +430,19 @@ figcaption {
     margin: 0 auto;
     align-content: center;
     }
-}
 
-@media only screen and (max-width: 360px){
     nav {
-        display: none;
+        width: 65%;
     }
+    
+@media only screen and (min-width: 360px){
+    nav {
+        /*display: none;*/
+        width: 65%;
+    }
+
     body {
-        font-size: 90%;
+        font-size: 80%;
     }
 
     .doctorsel {
@@ -436,4 +465,12 @@ figcaption {
         display: none;
 
     }
+   .start .new {
+        width: 100%;
+   } 
+
+   .start .familiar {
+        width: 100%;
+   }
 }
+

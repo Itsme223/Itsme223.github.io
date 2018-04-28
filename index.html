@@ -4,17 +4,20 @@
     <!-- <meta charset="UTF-8"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Who Fansite</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+   
 </head>
-
+<body>
         <input type="checkbox" id="toggle" name="toggle">
     <nav>
         <ul class="menu">
             <li><a href="#doctor">Doctor</a></li>
-            <li><a href="#Start">Where Do I Start</a></li>
+            <li><a href="#start">Where Do I Start</a></li>
             <li><a href="#doctors">Regenerations</a></li>
             <li><a href="#questions">Questions</a></li>
             <li><a href="#comments">Comments</a></li>
@@ -26,21 +29,23 @@
         </video>
     </header>
 
-<body>
+
     <label for="toggle"><i class="fa fa-bars"></i> Menu</label>
-<section>
-    <div class="Doctor" id="doctor">
+  <section>
+    <div class="wrapper">
+      <div class="doctor" id="doctor">
             <h1>Doctor Who and Tardis</h1>
             <p>Doctor Who is a British science-fiction television programme produced by the BBC since 1963. The programme depicts the adventures of a Time Lord called "the Doctor", an extraterrestrial being from the planet Gallifrey. The Doctor explores the universe in a time-travelling space ship called the TARDIS. Its exterior appears as a blue British police box, which was a common sight in Britain in 1963 when the series first aired. Accompanied by a number of companions, the Doctor combats a variety of foes, while working to save civilisations and help people in need.</p>
 
         
-             
+            
+    </div>         
         </div>
-</section>
+  </section>
 
-<section>
-   
-     <div class="Start" id="Start">
+  <section>
+   <div class="wrapper">
+     <div class="start clearfix" id="start">
             
         <h1>Where To Start?</h1>
         <p>Doctor Who started in 1963, making it the longest running Sci-fi to date.  There have been at least 14 actors to take up the role of the Doctor, along with over a dozen side-characters or companions who help out the Doctor in every adventure.</p>
@@ -48,19 +53,23 @@
         <p>As big as this show is, it leaves us wondering
             <span>Where Do I Start?</span></p>
 
-    <ul class="Newbies">
-        <h1>Newbies</h1>
-        <li><h2>Series 1, Episode 1</h2>-"Rose"</li>
-        <li><h2>Series 3, Episode 10</h2>-"Blink"</li>
-        <li><h2>Series 5, Episode 1</h2>-"Eleventh Hour"</li>
-    </ul>
+    <div class="new">
+      <h1>Newbies</h1>
+      <ul class="newbies">
+          <li><h2>Series 1, Episode 1</h2>-"Rose"</li>
+          <li><h2>Series 3, Episode 10</h2>-"Blink"</li>
+          <li><h2>Series 5, Episode 1</h2>-"Eleventh Hour"</li>
+      </ul>
+    </div>
 
-    <ul class="Somewhat">
+    <div class="familiar">
         <h1>Somewhat Familiar</h1>
+      <ul class="somewhat">
         <li><h2>Series 3, Episode 10</h2>-"Blink"</li>
         <li><h2>Series 6, Episode 11</h2>-"God Complex"</li>
         <li><h2>Series 8, Episode 1</h2>-"Deep Breath"</li>  
-    </ul>
+      </ul>
+    </div>
 
         <p>Included are two suggested playlists. The first one ( Newbies) is for those fans who are starting the show for the first time. The second playlist ( Somewhat familiar) is for the people who are kind of familiar with the show. Each playlist consits of 3 episodes from the "New Who" era of episodes ( Starting in 2005). Below is a playlist for those who want to binge watch full season of Doctor Who. An alternative to this playlist is to just watch season 1 - 9 ( including the specials in between each season).  </p>
 
@@ -72,181 +81,191 @@
         <p>If you want to start from the beginning, it would be best to start with the shows revival in 2005 and progress from there.If you find that you do not have the time or patience to do that. Then you can follow the playlist below, which shows the best order to watch the seasons in, including those episodes you can avoid. The following playlist has all the seasons in the "New Who era".
         </p>
 
-        <ul class ="binge">
-            <h1>Binge Watch Season Order</h1>
+        <div class="order">
+          <h2>Binge Watch Season Order</h2>
+          <ul class ="binge">
 
-            <li><h2>Season 5</h2> - Watch All episodes</li>
+            <li><h3>Season 5</h3> - Watch All episodes</li>
 
-            <li><h2>Season 1</h2> - Watch All episodes</li>
+            <li><h3>Season 1</h3> - Watch All episodes</li>
 
-            <li><h2>Season 2</h2> - Can skip Episode 7, 10 and 11 </li>
+            <li><h3>Season 2</h3> - Can skip Episode 7, 10 and 11 </li>
 
-            <li><h2>Season 3</h2> - Can skip 2, 4, 5, 6 and 7</li>
+            <li><h3>Season 3</h3> - Can skip 2, 4, 5, 6 and 7</li>
 
-            <li><h2>Season 4</h2> - Watch All episodes</li>
+            <li><h3>Season 4</h3> - Watch All Episodes</li>
 
-            <li><h2>Season 6</h2> - Watch All episodes</li>
+            <li><h3>Season 6</h3> - Watch All Episodes</li>
 
-            <li><h2>Season 7</h2> - Can skip Episode 3, 8 and 9</li>
+            <li><h3>Season 7</h3> - Can skip Episode 3, 8 and 9</li>
 
-            <li><h2>Season 8</h2> - Can skip Episode 7 and 8</li>
+            <li><h3>Season 8</h3> - Watch All Episodes</li>
 
-            <li><h2>Season 9</h2> - Can skip Episode 3 and 9</li>
+            <li><h3>Season 9</h3> - Watch All Episodes</li>
 
-            <li><h2>Season 10</h2> - Watch All episodes</li>
+            <li><h3>Season 10</h3> - Watch All Episodes</li>
 
-            <li><h2>Season 11</h2> - Starts: October 2018</li>
-        </ul>
-
-    </div> 
-</section>
-
-<section>
-        <div class="doctors" id="doctors">
-        <h1>Regeneration</h1>
-        <p>Regeneration is a biological ability exhibited by the Time Lords, a race of fictional humanoids originating on the planet Gallifrey. This process allows a Time Lord to undergo a transformation into a new physical form and a somewhat different personality after instances which would normally result in death. Regeneration has been used twelve times throughout the history of the franchise as a device for introducing a new actor for the lead role of it's main character, the Doctor. Other Time Lords and similar characters have also regenerated, usually for narrative, rather than casting, reasons.
-        </p>
+            <li><h3>Season 11</h3> - Starts: October 2018</li>
+          </ul>
         </div>
+      </div>
+    </div> 
+  </section>
+
+  <section>
+    <div class="wrapper">
+        <div class="doctors" id="doctors">
+          <h1>Regeneration</h1>
+          <p>Regeneration is a biological ability exhibited by the Time Lords, a race of fictional humanoids originating on the planet Gallifrey. This process allows a Time Lord to undergo a transformation into a new physical form and a somewhat different personality after instances which would normally result in death. Regeneration has been used twelve times throughout the history of the franchise as a device for introducing a new actor for the lead role of it's main character, the Doctor. Other Time Lords and similar characters have also regenerated, usually for narrative, rather than casting, reasons.
+          </p>
+        </div>
+    </div>
 
         <video src="images/All the Doctor's Regeneration! 1963-2018 - Doctor Who.mp4" controls loop>
     </video> 
-</section>
+  </section>
 
-<section class="gallery">
-    <div class="doctorim">
+  <section class="gallery">
+      <div class="doctorim">
 
-    <figure class="gallery__item">
-      <img src="images/first doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>1st Doctor</h3>
-        <p>William Hartnell - 1963-1966</p>
-        <h4>Seasons: 1, 2, 3</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/first doctor1.jpg" alt="William Hartnell holding both sides of coat,looking serious; tie is pushing up monocole">
+        <figcaption class="gallery__image-caption">
+          <h3>1st Doctor</h3>
+          <p>William Hartnell - 1963-1966</p>
+          <h4>Seasons: 1, 2, 3</h4>
+        </figcaption>
+      </figure>
     
-     <figure class="gallery__item">
-      <img src="images/Second doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>2nd Doctor</h3>
-        <p>Patrick Troughton - 1966-1969</p>
-        <h4>Seasons: 4, 5, 6</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/Second doctor1.jpg" alt="Patrick Troughton playing flute">
+        <figcaption class="gallery__image-caption">
+          <h3>2nd Doctor</h3>
+          <p>Patrick Troughton - 1966-1969</p>
+          <h4>Seasons: 4, 5, 6</h4>
+        </figcaption>
+      </figure>
     
-     <figure class="gallery__item">
-      <img src="images/Third Doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>3rd Doctor</h3>
-        <p>Jon Pertwee - 1970-1974</p>
-        <h4>Seasons: 7, 8, 9, 10, 11</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/Third Doctor1.jpg" alt="Jon Pertwee looking serious, in black coat and burgendy color scarf">
+        <figcaption class="gallery__image-caption">
+          <h3>3rd Doctor</h3>
+          <p>Jon Pertwee - 1970-1974</p>
+          <h4>Seasons: 7, 8, 9, 10, 11</h4>
+        </figcaption>
+      </figure>
     
-     <figure class="gallery__item">
-      <img src="images/4th-doc-1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>4th Doctor</h3>
-        <p>Tom Baker - 1974-1981</p>
-        <h4>Seasons: 12, 13, 14, 15, 16, 17, 18</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/4th-doc-1.jpg" alt="Tom Baker having a bewildered look, wearing grey coat, hat and multi-color scarf">
+        <figcaption class="gallery__image-caption">
+          <h3>4th Doctor</h3>
+          <p>Tom Baker - 1974-1981</p>
+          <h4>Seasons: 12, 13, 14, 15, 16, 17, 18</h4>
+        </figcaption>
+      </figure>
     
-     <figure class="gallery__item">
-      <img src="images/fifth doctor 1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>5th Doctor</h3>
-        <p>Peter Davidson - 1981-1984</p>
-        <h4>Seasons: 19, 20, 21</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/fifth doctor 1.jpg" alt="Peter Davidson looking serious in baige overcoat with celery stick on left chest pocket ">
+        <figcaption class="gallery__image-caption">
+          <h3>5th Doctor</h3>
+          <p>Peter Davidson - 1981-1984</p>
+          <h4>Seasons: 19, 20, 21</h4>
+        </figcaption>
+      </figure>
     
-     <figure class="gallery__item">
-      <img src="images/6th doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>6th Doctor</h3>
-        <p>Colin Baker - 1984-1986</p>
-        <h4>Seasons: 22, 23</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/6th doctor1.jpg" alt="Colin Baker sitting on rocks holding a yellow, red, blue and green umbrella">
+        <figcaption class="gallery__image-caption">
+          <h3>6th Doctor</h3>
+          <p>Colin Baker - 1984-1986</p>
+          <h4>Seasons: 22, 23</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/seventh doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>7th Doctor</h3>
-        <p>Sylvester McCoy - 1987-1996</p>
-        <h4>Seasons: 24, 25, 26</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/seventh doctor1.jpg" alt="Slyvester McCoy wearing a white and red top hat">
+        <figcaption class="gallery__image-caption">
+          <h3>7th Doctor</h3>
+          <p>Sylvester McCoy - 1987-1996</p>
+          <h4>Seasons: 24, 25, 26</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/eigth doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>8th Doctor</h3>
-        <p>Paul McGann - 1996</p>
-        <<h4>Seasons:TV Movie (1996)</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/eigth doctor1.jpg" alt="Paul McGann holding sonic screwdriver">
+        <figcaption class="gallery__image-caption">
+          <h3>8th Doctor</h3>
+          <p>Paul McGann - 1996</p>
+          <h4>Seasons:TV Movie (1996)</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/ninth doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>9th Doctor</h3>
-        <p>Christopher Eccleston - 2005</p>
-        <h4>Season: 1</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/ninth doctor1.jpg" alt="Christopher Eccleston smiling">
+        <figcaption class="gallery__image-caption">
+          <h3>9th Doctor</h3>
+          <p>Christopher Eccleston - 2005</p>
+          <h4>Season: 1</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/tenth doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>10th Doctor</h3>
-        <p>David Tennant - 2005-2010</p>
-        <h4>Seasons: 2, 3, 4, Specials</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/tenth doctor1.jpg" alt="David Tennant wearing 3-D glasses">
+        <figcaption class="gallery__image-caption">
+          <h3>10th Doctor</h3>
+          <p>David Tennant - 2005-2010</p>
+          <h4>Seasons: 2, 3, 4, Specials</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/eleventh doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>11th Doctor</h3>
-        <p>Matt Smith - 2010-2013</p>
-        <h4>Seasons: 5, 6, 7, Specials</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/eleventh doctor1.jpg" alt="Matt Smith pointing sonic screwdriver">
+        <figcaption class="gallery__image-caption">
+          <h3>11th Doctor</h3>
+          <p>Matt Smith - 2010-2013</p>
+          <h4>Seasons: 5, 6, 7, Specials</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/War-Doctor1.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>War Doctor</h3>
-        <p>Sir John Hurt - 2013</p>
-        <h4>Seasons: 50th Anniversary Special</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/War-Doctor1.jpg" alt="Sir John Hurt standing in front of a large red button, in a shed" >
+        <figcaption class="gallery__image-caption">
+          <h3>War Doctor</h3>
+          <p>Sir John Hurt - 2013</p>
+          <h4>Seasons: 50th Anniversary Special</h4>
+        </figcaption>
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/peter-capaldi-12th-doctor.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>12th Doctor</h3>
-        <p>Peter Capaldi - 2013-2017</p>
-        <h4>Seasons: 8, 9, 10</h4>
-      </figcaption> 
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/peter-capaldi-12th-doctor.jpg" alt="Peter Capaldi in red coat, extending hand to center">
+        <figcaption class="gallery__image-caption">
+          <h3>12th Doctor</h3>
+          <p>Peter Capaldi - 2013-2017</p>
+          <h4>Seasons: 8, 9, 10</h4>
+        </figcaption> 
+      </figure>
 
-    <figure class="gallery__item">
-      <img src="images/13th-doctor.jpg">
-      <figcaption class="gallery__image-caption">
-        <h3>13th Doctor</h3>
-        <p>Jodie Whittaker - Present</p>
-        <h4>Seasons: October 2018</h4>
-      </figcaption>
-    </figure>
+      <figure class="gallery__item">
+        <img src="images/13th-doctor.jpg" alt="Jodie Whittaker standing in forest after removing hood">
+        <figcaption class="gallery__image-caption">
+          <h3>13th Doctor</h3>
+          <p>Jodie Whittaker - Present</p>
+          <h4>Seasons: October 2018</h4>
+        </figcaption>
+      </figure>
+
     </div>
-</section>
+  </section>
+
+
 
     <section>
+      <div class="wrapper">
         <div class="questions" id="questions">
             <ul>
                 <h1>Questions</h1>
+
+                <h5>Popular Doctor Who questions:</h5>
                     
 
                 <li>    
@@ -274,9 +293,11 @@
                 </li>
             </ul>
         </div>
+      </div>
     </section>
 
     <section>
+      <div class="wrapper">
         <div class="comments" id="comments">
             <h1>Comments</h1>
             <h5>Below are comments from people who have seen the show:</h5>
@@ -319,8 +340,16 @@
                     <p> - Anthony/Toronto, Canada</p>
                 </li>
             </ul>
+          </div>
         </div>
-    </section>
+      </section>
+    
+
+  
+      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    
+
     
 </body>
 </html>
