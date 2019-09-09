@@ -13,7 +13,7 @@ body {
 }
 
 video {
-                
+
     object-fit: fill;
     width: 100%;
 }
@@ -29,17 +29,17 @@ nav {
     bottom:0;
     margin:0;
     padding: 0;
-    
+
     transition: right 1s;
     z-index: 10;
-}    
+}
 
 nav a {
         color: white;
         font-size: 40px;
         padding: 10px;
         display: block;
-        text-decoration: none;      
+        text-decoration: none;
 }
 
 
@@ -75,7 +75,7 @@ input[type="checkbox"] {
     color: white;
     text-align: center;
     height: 100%;
-    
+
 }
 
 .doctor h1 {
@@ -102,7 +102,7 @@ input[type="checkbox"] {
     /*padding: 100px;*/
 }
 .start h1{
-    color: red;
+    color: white;
     font-family: 'Merriweather', serif;
     font-size: 40px;
 
@@ -114,7 +114,7 @@ input[type="checkbox"] {
 .start span {
     font-family: 'Merriweather',serif;
     font-size: 28px;
-    color:red;
+    color:white;
 }
 .start .new {
     float: left;
@@ -146,11 +146,11 @@ input[type="checkbox"] {
     text-decoration:none;
     background:#E4B200 ;
     border: 2px solid black;
-    padding: 19px; 
+    padding: 19px;
     line-height: 2;
 }
 .familiar h1 {
-    font-family: 'Muli', sans-serif; 
+    font-family: 'Muli', sans-serif;
     font-size:30px;
     color:#003B6f;
 
@@ -168,7 +168,7 @@ input[type="checkbox"] {
     background:#E4B200 ;
 }
 .order h2 {
-    font-family: 'Muli', sans-serif; 
+    font-family: 'Muli', sans-serif;
     font-size:30px;
     color:#003B6f;
     font-size: 30px;
@@ -177,10 +177,10 @@ input[type="checkbox"] {
 
 
 .binge {
-    
+
     text-decoration: none;
-    
-    padding: 19px;  
+
+    padding: 19px;
     list-style: none;
     line-height: 2;
     margin: 0 auto;
@@ -200,7 +200,7 @@ input[type="checkbox"] {
     background: #003B6F;
     color: white;
     text-align: center;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     line-height: 2;
     /*padding: 100px;*/
@@ -255,7 +255,7 @@ figcaption {
     bottom: 0;
     top: 0;
     opacity: 0;
-    
+
 
     transition: opacity 2s ease-in;
 }
@@ -263,7 +263,7 @@ figcaption {
 .gallery__image-caption h3 {
     font-family: 'Merriweather', serif;
     font-size: 220%;
-    color: orange;
+    color: purple;
 
     text-align:center;
 }
@@ -271,8 +271,8 @@ figcaption {
 .gallery__image-caption p {
     font-family:'Muli', sans-serif;
     font-size: 30px;
-    color: #ff253a;
-    
+    color: black;
+
     text-align: center;
 }
 
@@ -290,7 +290,7 @@ figcaption {
 
 .gallery__item:hover figcaption{
     opacity: 1;
-    
+
     transition: opacity 2s ease-out;
 }
 
@@ -360,12 +360,12 @@ figcaption {
 }
 .comments p {
     font-size:20px;
-} 
+}
 
 
 
 
-   
+
 @media screen and (max-width: 800px){
     nav {
         width: 68%;
@@ -374,10 +374,10 @@ figcaption {
     }
 
     .gallery__item{
-        
+
         width: 100%;
     }
-    
+
     .doctorsel {
         width: 100%;
         flex-direction: column;
@@ -395,8 +395,8 @@ figcaption {
     .doctext:hover {
         text-align: center;
     }
-    
-    
+
+
 }
 
 
@@ -418,7 +418,7 @@ figcaption {
         width: 100%;
     }
 
-    
+
 
 }
 @media only screen and (max-width: 400px){
@@ -434,7 +434,7 @@ figcaption {
     nav {
         width: 65%;
     }
-    
+
 @media only screen and (min-width: 360px){
     nav {
         /*display: none;*/
@@ -447,7 +447,7 @@ figcaption {
 
     .doctorsel {
         padding-left: 100px;
-        
+
 
     }
 
@@ -459,7 +459,7 @@ figcaption {
     .doctext {
         height:100%;
         width:90%;
-        
+
     }
     .doctext p {
         display: none;
@@ -467,10 +467,9 @@ figcaption {
     }
    .start .new {
         width: 100%;
-   } 
+   }
 
    .start .familiar {
         width: 100%;
    }
 }
-
